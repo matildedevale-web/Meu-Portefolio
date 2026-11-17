@@ -1,0 +1,149 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf2f6; /* Fundo rosa bem clarinho e suave */
+    color: #3d2c33;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #c24675; /* Rosa escuro elegante */
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fce4ec;
+}
+
+/* Menu de Navegação */
+nav {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc1d6; /* Rosa pastel ao passar o rato */
+}
+
+/* Secções */
+section {
+    padding: 2.5rem 2rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(194, 70, 117, 0.08);
+}
+
+section h2 {
+    color: #a6335e;
+    border-bottom: 2px solid #f48fb1; /* Linha divisória rosa */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section h3 {
+    color: #c24675;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Listas (Habilidades e Hobbies) */
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+section ul li::marker {
+    color: #e91e63; /* Pontos da lista em rosa vibrante */
+}
+
+/* Sobre Mim */
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.sobre-conteudo img {
+    width: 180px;               /* Largura da imagem */
+    height: 180px;              /* Altura da imagem (igual para ficar quadrada) */
+    border-radius: 12px;        /* Arredonda ligeiramente os cantos (podes tirar se quiseres totalmente a direito) */
+    object-fit: cover;          /* Garante que a imagem se ajusta sem ficar distorcida */
+    border: 4px solid #f48fb1;  /* A moldura cor-de-rosa à volta */
+}
+
+/* Projetos */
+.grade-projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cartao-projeto {
+    flex: 1;
+    min-width: 240px;
+    background: #fff8fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #f8bbd0;
+    text-align: center;
+}
+
+.cartao-projeto img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #c24675;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+/* ===== 6. TELEMÓVEL (ecrãs pequenos) ===== */
+@media (max-width: 600px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .menu {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
